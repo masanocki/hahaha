@@ -8,7 +8,9 @@ class Game:
         self.WIDTH = 1280
         self.HEIGHT = 720
         self.running = True
-        self.screen = pygame.display.set_mode((self.WIDTH, self.HEIGHT))
+        self.screen = pygame.display.set_mode(
+            (self.WIDTH, self.HEIGHT), pygame.RESIZABLE
+        )
         self.clock = pygame.time.Clock()
         self.bg_first_arena = pygame.image.load("./assets/arena_1.jpg")
 
